@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="./datos.php">
+        <label for="idNombre">Nombre: </label>
+        <input id="idNombre" name="nombre" 
+            type="text" placeholder="Ingresa tu Nombre"> <br>
+            <label for="idApellido">Apellido: </label>
+        <input id="idApellido" name="apellido" 
+            type="text" placeholder="Ingresa tu Apellido" autocomplete="off">
+        <br>
+        
+        <label for="email">eMail:</label>
+        <input type="email" id="idEmail" name="mail" placeholder="Ingresa tu email">
+        <br>
+        
+        <label for="contrasenia">Contraseña:</label>
+        <input id="contrasenia" type="password" >
+        <br>
+
+        <label for="idEdad">Ingresá tu edad:</label>
+        <input type="number" id="idEdad" name="edad" value="10" min="0" max="99">
+        <br>
+
+        <input type="time" value="23:20" ><br>
+        <input type="date" value="01/12/2001"><br>
+
+        <hr>
+
+        <h3>Comidas tipicas del norte:</h3>
+        <input type="checkbox" value="empanada" id="idEmpanada" name="norte"><label for="idEmpanada">Empanada</label><br>
+        <input type="checkbox" value="humita" id="idHumita"  name="norte"><label for="idHumita">Humita</label><br>
+        <input type="checkbox" value="llama" id="idLlama"  name="norte"><label for="idLlama">Llama</label><br>
+        <input type="checkbox" value="tamales" id="idTamales"  name="norte"><label for="idTamales">Tamales</label><br>
+        <input type="checkbox" value="corderoPatagónico" id="idCordero"  name="norte"><label for="idCordero">Cordero Patagónico</label><br>
+
+        <hr>
+
+        <h3>Pasatiempo:</h3>
+        <input type="radio"  id="idMusica" value="musica" name="pasatiempo"> <label for="idMusica">Musica</label>
+        <input type="radio" checked id="idInternet" value="internet" name="pasatiempo"> <label for="idInternet">Internet</label>
+        <input type="radio" id="idCine" value="cine" name="pasatiempo"> <label for="idCine">Cine</label>
+        <input type="radio" id="idTV" value="TV"  name="pasatiempo"> <label for="idTV">TV</label>
+
+        <input type="submit" value="Submitear el formulario">
+
+
+        <select id="idAutos" name="autos">
+            <option value="Volvo">Volvo</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Renault">Renault</option>
+        </select>
+        <br>
+        <label for="Comentarios">Dejame tu duda: </label><br>
+        <textarea cols="90" rows="5" id="Comentarios" name="Comentarios"></textarea>
+    </form>
+
+
+
+</body>
+</html>
